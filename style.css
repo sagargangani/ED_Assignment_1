@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 #header{  
@@ -17,7 +18,7 @@
     margin-top: 9px;
     margin-left: 8px;
 }
-img{
+#social img{
     /* display: inline-block; */
     height: 30px;
     width: 30px;
@@ -67,9 +68,64 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 .quicksearch{
-    height: 40vh;
+    height: 70vh;
     background-color: rgb(191, 240, 142);
 }
+.quicksearch h3{
+    position: relative;
+    top: 24px;
+    left: 74px;
+    margin-bottom: 37px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.quicksearch h5{
+    position: relative;
+    top: 5px;
+    left:77px;
+    margin-bottom: 37px;
+    opacity: 0.7;
+}
+
+.cards{
+    /* padding: 20px; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards .card_item{
+
+    margin: 0 10px 15px 10px;
+    padding: 15px 25px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 22%;
+    box-shadow: 0px 3px 6px #00000029;
+
+}
+
+.cards .card_item img{
+    width: 100px;
+	height: 100px;
+}
+
+.cards .card_item .meal_type{
+    font-weight: 900;
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+.cards .card_item .description{ 
+    padding: 0 25px;
+}
+
+
+
 footer{
     background-color: #3b2632;
     height: 100px;
